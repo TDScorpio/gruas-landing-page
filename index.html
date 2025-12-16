@@ -9,62 +9,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 </head>
 <body class="font-sans text-gray-800">
 
     <!-- Header / Hero -->
-    <header class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">
-                Servicio de Grúas 24/7
+    <header class="relative h-screen text-white">
+        <img src="img/GruaRem.png" 
+            alt="Servicio de grúas"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center text-center animate__animated animate__fadeIn">
+
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+                Servicio de Grúas A&G <span class="text-yellow-400">24/7</span>
             </h1>
-            <p class="text-lg md:text-xl mb-6">
-                Atención rápida y segura para autos y camionetas
+
+            <p class="text-lg md:text-2xl mb-8 max-w-3xl">
+                Llegamos rápido. Remolcamos seguro. Atención inmediata en cualquier emergencia.
             </p>
-            <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg">
-                Llamar ahora
-            </a>
+
+            <div class="flex gap-4 flex-wrap justify-center">
+                <a href="tel:+51949352743"
+                class="bg-yellow-500 text-black px-10 py-4 rounded-xl font-bold text-lg hover:scale-110 transition">
+                    Llamar ahora
+                </a>
+
+                <a href="https://wa.me/51949352743"
+                class="bg-green-500 px-10 py-4 rounded-xl font-bold text-lg hover:scale-110 transition">
+                    WhatsApp
+                </a>
+            </div>
+
         </div>
     </header>
 
+
+
         <!-- Servicios -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
         <div class="max-w-7xl mx-auto px-4">
 
-            <h2 class="text-3xl font-bold text-center mb-12">
+            <h2 class="text-3xl font-bold text-center mb-12 animate__animated animate__fadeInUp">
                 Nuestros Servicios
             </h2>
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="text-4xl mb-4">🚗</div>
-                    <h3 class="text-xl font-semibold mb-2">Grúas para Autos</h3>
-                    <p class="text-gray-600">
-                        Traslado seguro de vehículos livianos en cualquier situación.
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-yellow-500/30 hover:-translate-y-3 transition duration-300">
+                    <i class="fas fa-truck-pickup text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Grúas para Autos</h3>
+                    <p class="text-gray-300">
+                        Traslado seguro de vehículos livianos y pesados.
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="text-4xl mb-4">🚑</div>
-                    <h3 class="text-xl font-semibold mb-2">Accidentes</h3>
-                    <p class="text-gray-600">
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-yellow-500/30 hover:-translate-y-3 transition duration-300">
+                    <i class="fas fa-car-crash text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Accidentes</h3>
+                    <p class="text-gray-300">
                         Atención inmediata ante accidentes de tránsito.
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="text-4xl mb-4">🔧</div>
-                    <h3 class="text-xl font-semibold mb-2">Auxilio Mecánico</h3>
-                    <p class="text-gray-600">
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-yellow-500/30 hover:-translate-y-3 transition duration-300">
+                    <i class="fas fa-tools text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Auxilio Mecánico</h3>
+                    <p class="text-gray-300">
                         Apoyo básico ante fallas mecánicas en la vía.
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="text-4xl mb-4">🛻</div>
-                    <h3 class="text-xl font-semibold mb-2">Traslado de Vehículos</h3>
-                    <p class="text-gray-600">
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-yellow-500/30 hover:-translate-y-3 transition duration-300">
+                    <i class="fas fa-truck-moving text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Traslado de Vehículos</h3>
+                    <p class="text-gray-300">
                         Transporte de vehículos a talleres o domicilios.
                     </p>
                 </div>
@@ -72,133 +100,224 @@
             </div>
         </div>
     </section>
-    <!-- Por qué elegirnos -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4">
+    <!-- Sobre Nosotros -->
+    <section class="py-20 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
 
-            <h2 class="text-3xl font-bold text-center mb-12">
-                ¿Por qué elegirnos?
-            </h2>
+            <div class="animate__animated animate__fadeInLeft">
+                <h2 class="text-4xl font-extrabold mb-6">
+                    Sobre Nosotros
+                </h2>
 
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
+                <p class="text-gray-300 mb-4">
+                    Somos un servicio de grúas especializado en atención de emergencias vehiculares,
+                    con base en los distritos de <strong>Los Olivos</strong> y <strong>San Luis</strong>.
+                </p>
 
-                <div>
-                    <div class="text-4xl mb-4">⏰</div>
-                    <h3 class="text-xl font-semibold mb-2">Atención 24/7</h3>
-                    <p class="text-gray-600">
-                        Disponibles todos los días, a cualquier hora.
-                    </p>
-                </div>
+                <p class="text-gray-300 mb-4">
+                    Brindamos asistencia inmediata en toda Lima Metropolitana y realizamos
+                    <strong class="text-yellow-400">traslados a provincias</strong> de forma segura y confiable.
+                </p>
 
-                <div>
-                    <div class="text-4xl mb-4">⚡</div>
-                    <h3 class="text-xl font-semibold mb-2">Llegada Rápida</h3>
-                    <p class="text-gray-600">
-                        Tiempo de respuesta inmediato en nuestra zona.
-                    </p>
-                </div>
-
-                <div>
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-xl font-semibold mb-2">Precios Justos</h3>
-                    <p class="text-gray-600">
-                        Tarifas claras y sin costos ocultos.
-                    </p>
-                </div>
-
-                <div>
-                    <div class="text-4xl mb-4">🛡️</div>
-                    <h3 class="text-xl font-semibold mb-2">Experiencia</h3>
-                    <p class="text-gray-600">
-                        Personal capacitado y equipos confiables.
-                    </p>
-                </div>
-
+                <p class="text-gray-400">
+                    Nuestro compromiso es llegar rápido, cuidar tu vehículo y ofrecer precios justos.
+                </p>
             </div>
+
+            <img src="img/GruaRem2.png"
+                alt="Transporte de vehículos"
+                class="rounded-2xl shadow-2xl animate__animated animate__fadeInRight">
         </div>
     </section>
+
+    <!-- Por qué elegirnos -->
+    <section class="py-24 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Imagen -->
+            <div class="relative animate__animated animate__fadeInLeft">
+                <img src="img/GruaCarretera.png"
+                    alt="Servicio profesional de grúas en carretera"
+                    class="rounded-2xl shadow-2xl">
+
+                <!-- Badge -->
+                <div class="absolute top-4 left-4 bg-yellow-500 text-black px-4 py-2 rounded-xl font-bold text-sm shadow-lg">
+                    Servicio Profesional
+                </div>
+            </div>
+
+            <!-- Contenido -->
+            <div class="animate__animated animate__fadeInRight">
+
+                <h2 class="text-4xl font-extrabold mb-6 leading-tight">
+                    ¿Por qué elegir nuestro <span class="text-yellow-400">servicio de grúas</span>?
+                </h2>
+
+                <p class="text-gray-300 text-lg mb-8">
+                    Brindamos atención inmediata y soluciones seguras para todo tipo de emergencias vehiculares,
+                    respaldados por experiencia, compromiso y equipos confiables.
+                </p>
+
+                <ul class="space-y-5 text-lg">
+
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-clock text-yellow-400 text-2xl mt-1"></i>
+                        <span>
+                            <strong>Disponibilidad 24/7:</strong> estamos listos para atenderte cualquier día y a cualquier hora.
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-bolt text-yellow-400 text-2xl mt-1"></i>
+                        <span>
+                            <strong>Respuesta rápida:</strong> llegamos en el menor tiempo posible según tu ubicación.
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-shield-alt text-yellow-400 text-2xl mt-1"></i>
+                        <span>
+                            <strong>Traslado seguro:</strong> cuidamos tu vehículo durante todo el recorrido.
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-hand-holding-usd text-yellow-400 text-2xl mt-1"></i>
+                        <span>
+                            <strong>Precios justos:</strong> tarifas claras, sin costos ocultos ni sorpresas.
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+
     <!-- Zona de Cobertura -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-20 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4">
 
-            <h2 class="text-3xl font-bold text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-center mb-16 animate__animated animate__fadeInUp">
                 Zona de Cobertura
             </h2>
 
-            <div class="grid gap-8 lg:grid-cols-2 items-center">
+            <div class="grid gap-12 lg:grid-cols-2 items-center">
 
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">
-                        Atendemos en:
+                <!-- Texto -->
+                <div class="animate__animated animate__fadeInLeft">
+
+                    <h3 class="text-2xl font-bold mb-6">
+                        Atendemos de forma inmediata en:
                     </h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✔ Lima Metropolitana</li>
-                        <li>✔ Callao</li>
-                        <li>✔ Zonas aledañas</li>
+
+                    <ul class="space-y-4 text-gray-300 text-lg">
+
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marked-alt text-yellow-400 text-xl"></i>
+                            Lima Metropolitana (todos los distritos)
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-warehouse text-yellow-400 text-xl"></i>
+                            Los Olivos y San Luis (base operativa)
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-anchor text-yellow-400 text-xl"></i>
+                            Callao
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-route text-yellow-400 text-xl"></i>
+                            Traslados a provincias a nivel nacional
+                        </li>
+
                     </ul>
-                    <p class="mt-4 text-gray-600">
-                        Llegamos rápidamente a tu ubicación para brindarte asistencia inmediata.
+
+                    <p class="mt-8 text-gray-400 text-lg leading-relaxed">
+                        Coordinamos cada servicio según la distancia y el tipo de vehículo,
+                        garantizando un traslado <span class="text-yellow-400 font-semibold">seguro, rápido y confiable</span>
+                        tanto en Lima como en provincias.
                     </p>
+
                 </div>
 
-                <div class="w-full h-80 rounded-xl overflow-hidden shadow-md">
-                    <iframe 
-                        title="Mapa de zona de cobertura"
-                        class="w-full h-full border-0"
+                <!-- Mapa -->
+                <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl animate__animated animate__fadeInRight">                 
+                    <iframe
+                    title="Mapa de cobertura del servicio de grúas"
+                        class="absolute inset-0 w-full h-full border-0"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps?q=Lima,Peru&output=embed">
-                    </iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77818.6478695931!2d-77.11502134169564!3d-11.965522728143792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce21b6748c45%3A0xece5fa25a5e8c4d5!2sLos%20Olivos!5e1!3m2!1ses-419!2spe!4v1765851164970!5m2!1ses-419!2spe" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+
+                    <!-- Overlay opcional -->
+                    <div class="absolute inset-0 ring-2 ring-yellow-400/30 rounded-2xl pointer-events-none"></div>
+
                 </div>
 
             </div>
         </div>
     </section>
+
     <!-- Contacto -->
-    <section class="py-16">
+    <section class="py-24 bg-yellow-500 text-black">
         <div class="max-w-7xl mx-auto px-4 text-center">
 
-            <h2 class="text-3xl font-bold mb-6">
-                Contáctanos Ahora
+            <h2 class="text-4xl font-extrabold mb-6">
+                ¿Necesitas una grúa ahora mismo?
             </h2>
 
-            <p class="text-gray-600 mb-10">
-                Atención inmediata las 24 horas del día.
+            <p class="text-lg mb-10 font-medium">
+                Atención inmediata en Lima y traslados a provincia.
+                Llámanos o escríbenos por WhatsApp.
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center gap-6">
 
-                <!-- Llamada -->
-                <a href="tel:+51999999999"
-                class="bg-gray-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition">
-                    📞 Llamar ahora
+                <a href="tel:+51949352743"
+                class="bg-black text-white px-10 py-5 rounded-2xl font-bold text-lg hover:scale-110 transition">
+                    📞 Llamar: 949 352 743
                 </a>
 
-                <!-- WhatsApp -->
-                <a href="https://wa.me/51999999999?text=Hola%2C%20necesito%20servicio%20de%20gr%C3%BAa."
+                <a href="https://wa.me/51949352743?text=Hola%2C%20necesito%20una%20gr%C3%BAa"
                 target="_blank"
-                class="bg-green-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-600 transition">
-                    💬 WhatsApp
+                class="bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:scale-110 transition">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
                 </a>
-
             </div>
-
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300">
-        <div class="max-w-7xl mx-auto px-4 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4 py-10 text-center">
 
-            <h3 class="text-lg font-semibold text-white mb-2">
-                Servicio de Grúas 24/7
+            <h3 class="text-xl font-bold text-white mb-4">
+                Servicio de Grúas A&G 24/7
             </h3>
 
-            <p class="text-sm mb-4">
-                Atención rápida y segura en Lima y alrededores.
-            </p>
+            <div class="flex justify-center gap-6 mb-6 text-2xl">
+                <a href="https://www.facebook.com/profile.php?id=61584948040118" class="hover:text-blue-500 transition">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/51949352743" class="hover:text-green-500 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
 
             <p class="text-sm text-gray-400">
-                © 2025 Servicio de Grúas. Todos los derechos reservados.
+                © 2025 Servicio de Grúas A&G. Todos los derechos reservados.
             </p>
 
         </div>
